@@ -2,6 +2,9 @@
     margin: 0px;
     padding: 0px;
 }
+body{
+    background-color: bisque;
+}
 .wrapper{
     max-width: 1024px;
     margin: 0 auto;
@@ -9,6 +12,7 @@
     text-align: center;
 }
 .info{
+    padding-bottom: 10px;
     border:1px solid green;
     background-color: gray;
     color:white;
@@ -22,6 +26,7 @@ p{
 }
 li{
     padding-bottom: 5px;
+    list-style-type: none;
 }
 .info a{
     color: white;
