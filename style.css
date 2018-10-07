@@ -23,10 +23,10 @@ p{
 li{
     padding-bottom: 5px;
 }
-.contacts a{
+.info a{
     color: white;
     text-decoration: none;
 }
-.contacts a:hover{
+.info a:hover{
     color:blueviolet;
 }
