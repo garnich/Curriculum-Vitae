@@ -35,3 +35,7 @@ li{
 .info a:hover{
     color:blueviolet;
 }
+h3{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
