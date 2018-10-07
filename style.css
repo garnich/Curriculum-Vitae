@@ -7,14 +7,17 @@ body{
 }
 .wrapper{
     max-width: 1024px;
-    margin: 0 auto;
-    border:1px solid red;
+    margin: 0 auto;    
     text-align: center;
+}
+h1{
+    color: #546aff;
+    padding: 20px 0;
 }
 .info{
     padding-bottom: 10px;
-    border:1px solid green;
-    background-color: gray;
+    border:1px solid white;
+    background-color: #546aff;
     color:white;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
