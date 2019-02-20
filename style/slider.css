@@ -26,10 +26,10 @@
 .prv_b{
   opacity:.3;
   left:10px;
-  background:url(/img/slides/prv.jpg) no-repeat;
+  background:url(./img/slides/prv.jpg) no-repeat;
 }
 .nxt_b{
   opacity:.3;
   right:10px;
-  background:url(/img/slides/nxt.jpg) no-repeat;
+  background:url(./img/slides/nxt.jpg) no-repeat;
 }
