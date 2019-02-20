@@ -3,42 +3,70 @@
     padding: 0px;
 }
 body{
-    background-color: bisque;
+    background-image: url(../img/bg.jpg);
+    background-attachment: fixed;
+    /* background-size: cover; */
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    /* opacity: .5; */
 }
 .wrapper{
+    background-image: url(../img/houndstooth-pattern.png);
+    /* background-color: white; */
     max-width: 1024px;
-    margin: 0 auto;    
+    margin: 20px auto;    
     text-align: center;
 }
 h1{
-    color: #546aff;
     padding: 20px 0;
 }
 .info{
-    padding-bottom: 10px;
-    border:1px solid white;
-    background-color: #546aff;
-    color:white;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: flex;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;   
+    
 }
-h2{
-    padding: 10px;
+.info img{
+    border-radius: 50%;
+    height: 200px;
+    padding: 20px;
 }
-p{
-    padding: 5px;
+.aboutMe{    
+    text-align: center;
+    width: 100%;
+}
+.aboutMe h2{    
+    padding-bottom: 20px;
+}
+section{
+    margin-bottom: 10px; 
+}
+.contacts ul{
+    margin: 0 auto;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+.contacts li{
+    font-size: 30px;
+    padding-right: 10px;
+}
+a{
+    color:black;
 }
 li{
-    padding-bottom: 5px;
-    list-style-type: none;
+    list-style: none;
 }
-.info a{
-    color: white;
-    text-decoration: none;
+.knowleges{
+    /* background-color: red; */
 }
-.info a:hover{
-    color:blueviolet;
+.sl_ctr{
+    margin: 0 auto;
 }
-h3{
-    margin-top: 10px;
-    margin-bottom: 10px;
+.block{
+    margin-bottom: 20px;
+}
+#year{
+    font-size: 12px;
 }
