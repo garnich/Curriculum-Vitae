@@ -21,13 +21,15 @@
   cursor:pointer;
 }
 .prv_b:hover, .nxt_b:hover{
-  opacity:.6;
+  opacity:1;
 }
 .prv_b{
+  opacity:.3;
   left:10px;
-  background:url(/img/slides/prv.png) no-repeat;
+  background:url(/img/slides/prv.jpg) no-repeat;
 }
 .nxt_b{
+  opacity:.3;
   right:10px;
-  background:url(/img/slides/nxt.png) no-repeat;
+  background:url(/img/slides/nxt.jpg) no-repeat;
 }
