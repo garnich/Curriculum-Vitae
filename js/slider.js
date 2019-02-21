@@ -1,6 +1,6 @@
 $(function() {
   var sldr = $('.sldr'),
-    arrData = ['HTML,JS,CSS,MongoDB', 'HTML,JS,CSS', 'HTML,JS,CSS', 'HTML,JS,CSS,REACT'];
+    arrData = ['HTML,JS,CSS,MongoDB', 'HTML,JS,CSS', 'HTML,JS,CSS','St Valentine', 'HTML,JS,CSS,REACT'];
   (sldrContent = sldr.html()),
     (slideWidth = $('.sl_ctr').outerWidth()),
     (slideCount = $('.sldr div').length),
@@ -47,10 +47,13 @@ $(function() {
     if (margin ==  -1350){
       $('.description').text(arrData[2]);
     }
-    if (margin ==  -1800 || margin == 0){
+    if (margin ==  -1800){
       $('.description').text(arrData[3]);
     }
-    if (margin ==  -2250){
+    if (margin ==  -2250 || margin == 0){
+      $('.description').text(arrData[4]);
+    }
+    if (margin ==  -2700){
       $('.description').text(arrData[0]);
     }
     console.log(margin);
