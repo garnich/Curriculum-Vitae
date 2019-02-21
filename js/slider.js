@@ -20,7 +20,10 @@ $(function() {
     .eq(1)
     .clone()
     .appendTo('.sldr');
-  $('.sldr').css('margin-left', -slideWidth);
+    $('.sldr').css('margin-left', -slideWidth);
+    console.log(margin);
+
+      
   function nxt_bSlide() {
     interval = window.setInterval(animate, sldrInterval);
   }
@@ -35,20 +38,23 @@ $(function() {
       margin = margin - slideWidth * course;
     }
     sldr.animate({ marginLeft: margin }, animateTime);
-    switch (margin) {
-      case -450:
-        $('.description').text(arrData[0]);
-      case -900:
-        $('.description').text(arrData[1]);
-      case -1350:
-        $('.description').text(arrData[2]);
-      case -1800:
-        $('.description').text(arrData[3]);
-      case -2250:
-        $('.description').text(arrData[0]);
+    if (margin == -450) {
+      $('.description').text(arrData[0]);
     }
-    // console.log($('.sldr').css('margin-left'));
+    if (margin ==  -900){
+      $('.description').text(arrData[1]);
+    }
+    if (margin ==  -1350){
+      $('.description').text(arrData[2]);
+    }
+    if (margin ==  -1800 || margin == 0){
+      $('.description').text(arrData[3]);
+    }
+    if (margin ==  -2250){
+      $('.description').text(arrData[0]);
+    }
     console.log(margin);
+       // console.log($('.sldr').css('margin-left'));
   }
   function sldrStop() {
     window.clearInterval(interval);
