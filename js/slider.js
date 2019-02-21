@@ -1,6 +1,6 @@
 $(function() {
   var sldr = $('.sldr'),
-    arrData = ['HTML,JS,CSS,MongoDB', 'HTML,JS,CSS', 'HTML,JS,CSS','St Valentine', 'HTML,JS,CSS,REACT'];
+    arrData = [["./img/icons/CSS.png","./img/icons/HTML.png","./img/icons/JS.png","./img/icons/Mongo.png","./img/icons/Heroku.png"], ["./img/icons/CSS.png","./img/icons/HTML.png"], ["./img/icons/CSS.png","./img/icons/HTML.png"],["./img/icons/CSS.png","./img/icons/HTML.png","./img/icons/JS.png"],["./img/icons/CSS.png","./img/icons/HTML.png","./img/icons/REACT.png"]];
   (sldrContent = sldr.html()),
     (slideWidth = $('.sl_ctr').outerWidth()),
     (slideCount = $('.sldr div').length),
@@ -11,7 +11,7 @@ $(function() {
     (course = 1),
     (margin = -slideWidth);
   if ($('.sldr').css('margin') == '0px') {
-    $('.description').text(arrData[0]);
+      $.each(arrData[0],function(index,value){$('.description').append($('<img>').attr('src', value).attr('width','50px'))});
   }
   $('.sldr div:last')
     .clone()
@@ -21,8 +21,6 @@ $(function() {
     .clone()
     .appendTo('.sldr');
     $('.sldr').css('margin-left', -slideWidth);
-    console.log(margin);
-
       
   function nxt_bSlide() {
     interval = window.setInterval(animate, sldrInterval);
@@ -39,25 +37,29 @@ $(function() {
     }
     sldr.animate({ marginLeft: margin }, animateTime);
     if (margin == -450) {
-      $('.description').text(arrData[0]);
+      $('.description').empty();
+      $.each(arrData[0],function(index,value){$('.description').append($('<img>').attr('src', value).attr('width','50px'))});
     }
     if (margin ==  -900){
-      $('.description').text(arrData[1]);
+      $('.description').empty();
+      $.each(arrData[1],function(index,value){$('.description').append($('<img>').attr('src', value).attr('width','50px'))});
     }
     if (margin ==  -1350){
-      $('.description').text(arrData[2]);
+      $('.description').empty();
+      $.each(arrData[2],function(index,value){$('.description').append($('<img>').attr('src', value).attr('width','50px'))});
     }
     if (margin ==  -1800){
-      $('.description').text(arrData[3]);
+      $('.description').empty();
+      $.each(arrData[3],function(index,value){$('.description').append($('<img>').attr('src', value).attr('width','50px'))});
     }
     if (margin ==  -2250 || margin == 0){
-      $('.description').text(arrData[4]);
+      $('.description').empty();
+      $.each(arrData[4],function(index,value){$('.description').append($('<img>').attr('src', value).attr('width','50px'))});
     }
     if (margin ==  -2700){
-      $('.description').text(arrData[0]);
+      $('.description').empty();
+      $.each(arrData[0],function(index,value){$('.description').append($('<img>').attr('src', value).attr('width','50px'))});
     }
-    console.log(margin);
-       // console.log($('.sldr').css('margin-left'));
   }
   function sldrStop() {
     window.clearInterval(interval);

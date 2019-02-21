@@ -33,3 +33,6 @@
   right:10px;
   background:url(../img/slides/nxt.jpg) no-repeat;
 }
+.description img{
+  padding: 5px 10px;
+}
