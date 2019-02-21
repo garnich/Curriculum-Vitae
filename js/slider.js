@@ -1,14 +1,18 @@
 $(function() {
   var sldr = $('.sldr'),
-    sldrContent = sldr.html(),
-    slideWidth = $('.sl_ctr').outerWidth(),
-    slideCount = $('.sldr div').length,
-    prv_b = $('.prv_b'),
-    nxt_b = $('.nxt_b'),
-    sldrInterval = 3300,
-    animateTime = 1000,
-    course = 1,
-    margin = -slideWidth;
+    arrData = ['HTML,JS,CSS,MongoDB', 'HTML,JS,CSS', 'HTML,JS,CSS', 'HTML,JS,CSS,REACT'];
+  (sldrContent = sldr.html()),
+    (slideWidth = $('.sl_ctr').outerWidth()),
+    (slideCount = $('.sldr div').length),
+    (prv_b = $('.prv_b')),
+    (nxt_b = $('.nxt_b')),
+    (sldrInterval = 3300),
+    (animateTime = 1000),
+    (course = 1),
+    (margin = -slideWidth);
+  if ($('.sldr').css('margin') == '0px') {
+    $('.description').text(arrData[0]);
+  }
   $('.sldr div:last')
     .clone()
     .prependTo('.sldr');
@@ -31,6 +35,20 @@ $(function() {
       margin = margin - slideWidth * course;
     }
     sldr.animate({ marginLeft: margin }, animateTime);
+    switch (margin) {
+      case -450:
+        $('.description').text(arrData[0]);
+      case -900:
+        $('.description').text(arrData[1]);
+      case -1350:
+        $('.description').text(arrData[2]);
+      case -1800:
+        $('.description').text(arrData[3]);
+      case -2250:
+        $('.description').text(arrData[0]);
+    }
+    // console.log($('.sldr').css('margin-left'));
+    console.log(margin);
   }
   function sldrStop() {
     window.clearInterval(interval);
