@@ -18,6 +18,7 @@ $(function() {
         './img/icons/Lodash.png',
         './img/icons/REACT.png',
       ],
+      ['./img/icons/HTML.png', './img/icons/CSS.png', './img/icons/Reveal.png'],
     ];
   (sldrContent = sldr.html()),
     (slideWidth = $('.sl_ctr').outerWidth()),
@@ -100,7 +101,7 @@ $(function() {
         );
       });
     }
-    if (margin == -2250 || margin == 0) {
+    if (margin == -2250) {
       $('.description').empty();
       $.each(arrData[4], function(index, value) {
         $('.description').append(
@@ -110,7 +111,17 @@ $(function() {
         );
       });
     }
-    if (margin == -2700) {
+    if (margin == -2700 || margin == 0) {
+      $('.description').empty();
+      $.each(arrData[5], function(index, value) {
+        $('.description').append(
+          $('<img>')
+            .attr('src', value)
+            .attr('width', '50px')
+        );
+      });
+    }
+    if (margin == -3150) {
       $('.description').empty();
       $.each(arrData[0], function(index, value) {
         $('.description').append(
