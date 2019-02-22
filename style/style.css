@@ -70,3 +70,10 @@ li{
 #year{
     font-size: 12px;
 }
+.knowleges img{
+    width: 60px;
+}
+.knowleges p{
+    font-size: 18px;
+    font-weight: bold;
+}

@@ -1,6 +1,6 @@
 $(function() {
   var sldr = $('.sldr'),
-    arrData = [["./img/icons/CSS.png","./img/icons/HTML.png","./img/icons/JS.png","./img/icons/Mongo.png","./img/icons/Heroku.png"], ["./img/icons/CSS.png","./img/icons/HTML.png"], ["./img/icons/CSS.png","./img/icons/HTML.png"],["./img/icons/CSS.png","./img/icons/HTML.png","./img/icons/JS.png"],["./img/icons/CSS.png","./img/icons/HTML.png","./img/icons/REACT.png"]];
+    arrData = [["./img/icons/CSS.png","./img/icons/HTML.png","./img/icons/JS.png","./img/icons/Mongo.png","./img/icons/Heroku.png","./img/icons/Canvas.png"], ["./img/icons/CSS.png","./img/icons/HTML.png"], ["./img/icons/CSS.png","./img/icons/HTML.png"],["./img/icons/CSS.png","./img/icons/HTML.png","./img/icons/JS.png"],["./img/icons/CSS.png","./img/icons/HTML.png","./img/icons/REACT.png","./img/icons/Lodash.png"]];
   (sldrContent = sldr.html()),
     (slideWidth = $('.sl_ctr').outerWidth()),
     (slideCount = $('.sldr div').length),
