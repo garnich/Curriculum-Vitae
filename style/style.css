@@ -10,6 +10,7 @@ body{
 .wrapper{
     background-image: url(../img/houndstooth-pattern.png);
     max-width: 1024px;
+    width: 95%;
     margin: 20px auto;    
     text-align: center;
 }
@@ -22,12 +23,20 @@ h2{
     padding-bottom: 20px;
     padding-top: 30px;
 }
-.info{
-    display: flex;
-    align-items: center;
-    width: 80%;
-    margin: 0 auto;   
-    
+@media (max-width: 800px) { 
+    .info{
+        align-items: center;
+        width: 80%;
+        margin: 0 auto;       
+    }
+}
+@media (min-width: 801px) { 
+    .info{
+        display: flex;
+        align-items: center;
+        width: 80%;
+        margin: 0 auto;       
+    }
 }
 .info img{
     border-radius: 50%;
