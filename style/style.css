@@ -50,9 +50,6 @@ h2{
 .aboutMe h2{    
     padding-bottom: 20px;
 }
-section{
-    margin-bottom: 10px; 
-}
 .contacts ul{
     margin: 0 auto;
     display:flex;
