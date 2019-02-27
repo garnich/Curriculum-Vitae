@@ -19,37 +19,58 @@
   </head>
   <body>
     <!-- Yandex.Metrika counter -->
-<script type="text/javascript" >
-  (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
-  m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
-  (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+    <script type="text/javascript">
+      (function(m, e, t, r, i, k, a) {
+        m[i] =
+          m[i] ||
+          function() {
+            (m[i].a = m[i].a || []).push(arguments);
+          };
+        m[i].l = 1 * new Date();
+        (k = e.createElement(t)),
+          (a = e.getElementsByTagName(t)[0]),
+          (k.async = 1),
+          (k.src = r),
+          a.parentNode.insertBefore(k, a);
+      })(window, document, 'script', 'https://mc.yandex.ru/metrika/tag.js', 'ym');
 
-  ym(52571581, "init", {
-       id:52571581,
-       clickmap:true,
-       trackLinks:true,
-       accurateTrackBounce:true,
-       webvisor:true
-  });
-</script>
-<noscript><div><img src="https://mc.yandex.ru/watch/52571581" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
-<!-- /Yandex.Metrika counter -->
+      ym(52571581, 'init', {
+        id: 52571581,
+        clickmap: true,
+        trackLinks: true,
+        accurateTrackBounce: true,
+        webvisor: true,
+      });
+    </script>
+    <noscript
+      ><div>
+        <img
+          src="https://mc.yandex.ru/watch/52571581"
+          style="position:absolute; left:-9999px;"
+          alt=""
+        /></div
+    ></noscript>
+    <!-- /Yandex.Metrika counter -->
     <div class="wrapper">
-      <h1>Curriculum Vitae</h1>
-      <h2>About Me</h2>
-      <div class="info block">
-        <img src="img/myfoto.jpg" alt="MyFoto" />
-        <div class="aboutMe">
-          <div>
-            <p>Hi!, I am Andrei Ihnatsiuk, and I glad that you visit my page.</p>
-          </div>
-          <div>
-            <p>
-              I graduated BSUIR in 2009 as an engineer. In same year I started my career as an
-              officer in board guards forces. After the end of the contract I changed the scope of
-              activities. Currently I'm working in tourism. In 2019 I graduated training in the
-              Rolling Scopes School and now looking for a position of junior frontend developer.
-            </p>
+      <header>
+        <h1>Curriculum Vitae</h1>
+      </header>
+      <div class="block">
+        <h2>About Me</h2>
+        <div class="info">
+          <img src="img/myfoto.jpg" alt="MyFoto" />
+          <div class="aboutMe">
+            <div>
+              <p>Hi!, I am Andrei Ihnatsiuk, and I glad that you visit my page.</p>
+            </div>
+            <div>
+              <p>
+                I graduated BSUIR in 2009 as an engineer. In same year I started my career as an
+                officer in board guards forces. After the end of the contract I changed the scope of
+                activities. Currently I'm working in tourism. In 2019 I graduated training in the
+                Rolling Scopes School and now looking for a position of junior frontend developer.
+              </p>
+            </div>
           </div>
         </div>
       </div>
@@ -154,7 +175,7 @@
       </div>
       <div class="contacts block">
         <h2>My contacts</h2>
-        <div>
+        <div class="phone">
           <p>If I come up already.<a href="tel:+375-29-509-23-01" title="+375-29-509-23-01"></a></p>
           <ul>
             <li>
@@ -195,9 +216,11 @@
               ></a>
             </li>
           </ul>
-          <p id="year">Minsk 2019</p>
         </div>
       </div>
+      <footer>
+        <p id="year">Minsk 2019</p>
+      </footer>
     </div>
   </body>
 </html>

@@ -101,14 +101,14 @@ li{
     box-sizing: border-box;
     border-bottom: 2px solid black;
 }
-.block section p a:after{
+.phone p a:after{
     content: 'Call Me!)))';
     text-decoration: underline;
     font-size: 16px;
     font-weight: bold;
 
 }
-.block section p a:hover:after{
+.phone p a:hover:after{
     content: '+357-29-509-23-01';
     text-decoration: underline;
     font-size: 16px;
