@@ -11,6 +11,7 @@
 }
 .sldr img{
   float:left;
+  width: 450px;
 }
 .prv_b, .nxt_b{
   position:absolute;

@@ -1,6 +1,25 @@
 $(function() {
   var sldr = $('.sldr'),
-    arrData = [["./img/icons/CSS.png","./img/icons/HTML.png","./img/icons/JS.png","./img/icons/Mongo.png","./img/icons/Heroku.png"], ["./img/icons/CSS.png","./img/icons/HTML.png"], ["./img/icons/CSS.png","./img/icons/HTML.png"],["./img/icons/CSS.png","./img/icons/HTML.png","./img/icons/JS.png"],["./img/icons/CSS.png","./img/icons/HTML.png","./img/icons/REACT.png"]];
+    arrData = [
+      ['./img/icons/HTML.png', './img/icons/CSS.png'],
+      [
+        './img/icons/HTML.png',
+        './img/icons/CSS.png',
+        './img/icons/JS.png',
+        './img/icons/Canvas.png',
+        './img/icons/Mongo.png',
+        './img/icons/Heroku.png',
+      ],
+      ['./img/icons/HTML.png', './img/icons/CSS.png'],
+      ['./img/icons/HTML.png', './img/icons/CSS.png', './img/icons/JS.png'],
+      [
+        './img/icons/CSS.png',
+        './img/icons/HTML.png',
+        './img/icons/Lodash.png',
+        './img/icons/REACT.png',
+      ],
+      ['./img/icons/HTML.png', './img/icons/CSS.png', './img/icons/Reveal.png'],
+    ];
   (sldrContent = sldr.html()),
     (slideWidth = $('.sl_ctr').outerWidth()),
     (slideCount = $('.sldr div').length),
@@ -11,7 +30,13 @@ $(function() {
     (course = 1),
     (margin = -slideWidth);
   if ($('.sldr').css('margin') == '0px') {
-      $.each(arrData[0],function(index,value){$('.description').append($('<img>').attr('src', value).attr('width','50px'))});
+    $.each(arrData[0], function(index, value) {
+      $('.description').append(
+        $('<img>')
+          .attr('src', value)
+          .attr('width', '50px')
+      );
+    });
   }
   $('.sldr div:last')
     .clone()
@@ -20,8 +45,8 @@ $(function() {
     .eq(1)
     .clone()
     .appendTo('.sldr');
-    $('.sldr').css('margin-left', -slideWidth);
-      
+  $('.sldr').css('margin-left', -slideWidth);
+
   function nxt_bSlide() {
     interval = window.setInterval(animate, sldrInterval);
   }
@@ -38,27 +63,73 @@ $(function() {
     sldr.animate({ marginLeft: margin }, animateTime);
     if (margin == -450) {
       $('.description').empty();
-      $.each(arrData[0],function(index,value){$('.description').append($('<img>').attr('src', value).attr('width','50px'))});
+      $.each(arrData[0], function(index, value) {
+        $('.description').append(
+          $('<img>')
+            .attr('src', value)
+            .attr('width', '50px')
+        );
+      });
     }
-    if (margin ==  -900){
+    if (margin == -900) {
       $('.description').empty();
-      $.each(arrData[1],function(index,value){$('.description').append($('<img>').attr('src', value).attr('width','50px'))});
+      $.each(arrData[1], function(index, value) {
+        $('.description').append(
+          $('<img>')
+            .attr('src', value)
+            .attr('width', '50px')
+        );
+      });
     }
-    if (margin ==  -1350){
+    if (margin == -1350) {
       $('.description').empty();
-      $.each(arrData[2],function(index,value){$('.description').append($('<img>').attr('src', value).attr('width','50px'))});
+      $.each(arrData[2], function(index, value) {
+        $('.description').append(
+          $('<img>')
+            .attr('src', value)
+            .attr('width', '50px')
+        );
+      });
     }
-    if (margin ==  -1800){
+    if (margin == -1800) {
       $('.description').empty();
-      $.each(arrData[3],function(index,value){$('.description').append($('<img>').attr('src', value).attr('width','50px'))});
+      $.each(arrData[3], function(index, value) {
+        $('.description').append(
+          $('<img>')
+            .attr('src', value)
+            .attr('width', '50px')
+        );
+      });
     }
-    if (margin ==  -2250 || margin == 0){
+    if (margin == -2250) {
       $('.description').empty();
-      $.each(arrData[4],function(index,value){$('.description').append($('<img>').attr('src', value).attr('width','50px'))});
+      $.each(arrData[4], function(index, value) {
+        $('.description').append(
+          $('<img>')
+            .attr('src', value)
+            .attr('width', '50px')
+        );
+      });
     }
-    if (margin ==  -2700){
+    if (margin == -2700 || margin == 0) {
       $('.description').empty();
-      $.each(arrData[0],function(index,value){$('.description').append($('<img>').attr('src', value).attr('width','50px'))});
+      $.each(arrData[5], function(index, value) {
+        $('.description').append(
+          $('<img>')
+            .attr('src', value)
+            .attr('width', '50px')
+        );
+      });
+    }
+    if (margin == -3150) {
+      $('.description').empty();
+      $.each(arrData[0], function(index, value) {
+        $('.description').append(
+          $('<img>')
+            .attr('src', value)
+            .attr('width', '50px')
+        );
+      });
     }
   }
   function sldrStop() {

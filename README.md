@@ -1,1 +1,1 @@
-"# rsschool-codejam1-cv" 
+# My Curriculum Vitae

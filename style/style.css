@@ -5,26 +5,38 @@
 body{
     background-image: url(../img/bg.jpg);
     background-attachment: fixed;
-    /* background-size: cover; */
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    /* opacity: .5; */
 }
 .wrapper{
     background-image: url(../img/houndstooth-pattern.png);
-    /* background-color: white; */
     max-width: 1024px;
+    width: 95%;
     margin: 20px auto;    
     text-align: center;
 }
 h1{
-    padding: 20px 0;
+    padding: 30px 0;
+    font-size: 40px;
+    font-weight: bolder
 }
-.info{
-    display: flex;
-    align-items: center;
-    width: 80%;
-    margin: 0 auto;   
-    
+h2{
+    padding-bottom: 20px;
+    padding-top: 30px;
+}
+@media (max-width: 800px) { 
+    .info{
+        align-items: center;
+        width: 80%;
+        margin: 0 auto;       
+    }
+}
+@media (min-width: 801px) { 
+    .info{
+        display: flex;
+        align-items: center;
+        width: 80%;
+        margin: 0 auto;       
+    }
 }
 .info img{
     border-radius: 50%;
@@ -39,9 +51,6 @@ h1{
     padding-bottom: 20px;
     color: red;
 }
-section{
-    margin-bottom: 10px; 
-}
 .contacts ul{
     margin: 0 auto;
     display:flex;
@@ -53,14 +62,15 @@ section{
     font-size: 30px;
     padding-right: 10px;
 }
+.contacts a:hover .fab,.contacts a:hover .fas{    
+    transition: 1s;
+    transform: rotateY(360deg);
+    }
 a{
     color:black;
 }
 li{
     list-style: none;
-}
-.knowleges{
-    /* background-color: red; */
 }
 .sl_ctr{
     margin: 0 auto;
@@ -69,5 +79,39 @@ li{
     margin-bottom: 20px;
 }
 #year{
+    padding-top: 20px;
+    padding-bottom: 10px;
     font-size: 12px;
+}
+.knowleges p{
+    font-size: 18px;
+    font-weight: bold;
+}
+.knowleges a{
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+.knowleges a:hover{
+    text-decoration: underline;
+}
+.knowleges a:hover{
+    text-decoration: underline;
+}
+.cources a:hover{
+    box-sizing: border-box;
+    border-bottom: 2px solid black;
+}
+.phone p a:after{
+    content: 'Call Me!)))';
+    text-decoration: underline;
+    font-size: 16px;
+    font-weight: bold;
+
+}
+.phone p a:hover:after{
+    content: '+357-29-509-23-01';
+    text-decoration: underline;
+    font-size: 16px;
+    font-weight: bold;
 }
